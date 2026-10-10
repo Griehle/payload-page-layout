@@ -1,0 +1,57 @@
+{
+  "name": "payload-page-layout",
+  "version": "0.1.0",
+  "description": "Page layout blocks for Payload CMS: columns, buttons, video, sliders, flipbooks, and HTML.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./client": {
+      "types": "./src/client.ts",
+      "default": "./src/client.ts"
+    },
+    "./rsc": {
+      "types": "./src/rsc.ts",
+      "default": "./src/rsc.ts"
+    },
+    "./sizing": {
+      "types": "./src/fields/sizing.ts",
+      "default": "./src/fields/sizing.ts"
+    }
+  },
+  "peerDependencies": {
+    "@payloadcms/richtext-lexical": "^3.0.0",
+    "@payloadcms/ui": "^3.0.0",
+    "next": "^15.0.0 || ^16.0.0",
+    "payload": "^3.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "pdfjs-dist": "^6.4.299",
+    "react-colorful": "^5.8.1",
+    "react-pageflip": "^2.0.3",
+    "tailwind-merge": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "keywords": [
+    "payload",
+    "payloadcms",
+    "plugin",
+    "layout",
+    "blocks"
+  ]
+}
