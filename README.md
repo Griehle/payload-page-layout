@@ -116,13 +116,4 @@ Flipbooks render PDFs with PDF.js. Copy the PDF.js assets into `public/pdfjs` (w
 | `flipbook` | A page-flip PDF. Files live in the `flipbooks` collection. |
 | `html` | HTML pasted onto the page. |
 
-## Publish this repository
 
-From this directory:
-
-```bash
-git init -b main
-git add .
-git commit -m "Initial commit"
-gh repo create payload-page-layout --public --source=. --remote=origin --push
-```
